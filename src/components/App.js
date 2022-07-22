@@ -12,15 +12,25 @@ function App() {
 
   return (
     <div>
+
       <NavBar />
+
+      {/* use Switch */}
       <Switch>
+        
         <Route path="/movies">
+          {/*use props */}
+
           <MoviesPage movies={movies} />
+
         </Route>
+
         <Route exact path="/">
           <div>Home</div>
         </Route>
+
       </Switch>
+
     </div>
   );
 }
